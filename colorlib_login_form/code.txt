@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{{pageTitle}}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="https://colorlib.com/etc/lf/Login_v1/images/icons/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v1/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v1/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v1/vendor/animate/animate.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v1/vendor/css-hamburgers/hamburgers.min.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v1/vendor/select2/select2.min.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v1/css/util.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v1/css/main.css">
+{{{SignInWidgetResources}}}
+
+<style type="text/css">
+#okta-sign-in{width:100px;margin-top:-50px;padding-bottom:70px;border:0px;}
+#okta-sign-in .auth-header{border-bottom:0px;}
+#okta-sign-in .auth-content{padding:0px;}
+#okta-sign-in.auth-container.main-container{box-shadow: 5px 5px white;}
+#okta-sign-in .o-form .input-fix input[type=number], #okta-sign-in .o-form .input-fix input[type=password], #okta-sign-in .o-form .input-fix input[type=text], #okta-sign-in .o-form .input-fix input[type=textbox]{font-family: Poppins-Medium;font-size: 15px;line-height: 1.5;color: #666;display: block;width: 100%;background: #e6e6e6;border-radius: 25px;padding: 0 30px 0 68px;outline:none;}
+#okta-sign-in .o-form .input-fix{border:0px;}
+#okta-sign-in .o-form-head{font-family: Poppins-Bold;}
+#okta-sign-in.auth-container .button-primary{font-weight:bold;font-family: Montserrat-Bold;font-size: 15px;line-height: 1.5;color: #fff;text-transform: uppercase;width: 100%;height: 50px;border-radius: 25px;display: -webkit-box;display: -webkit-flex;display: -moz-box;display: -ms-flexbox;display: flex;justify-content: center;align-items: center;padding: 0 25px;-webkit-transition: all .4s;-o-transition: all .4s;-moz-transition: all .4s;transition: all .4s;border-width:0px;}
+</style>
+</head>
+
+<body>
+<div class="limiter">
+<div class="container-login100">
+<div class="wrap-login100">
+<div class="login100-pic js-tilt" data-tilt>
+<img src="https://colorlib.com/etc/lf/Login_v1/images/img-01.png" alt="IMG">
+</div>
+    <div id="okta-login-container"></div>
+    {{{OktaUtil}}}
+
+    <script type="text/javascript">
+        var config = OktaUtil.getSignInWidgetConfig();
+        config["features"]["securityImage"] = false;
+
+        var oktaSignIn = new OktaSignIn(config);
+        oktaSignIn.renderEl({
+                el: '#okta-login-container'
+            },
+            OktaUtil.completeLogin,
+            function(error) 
+            {
+                console.log(error.message, error);
+            }
+        );
+    </script>
+</div>
+</div>
+</div>
+
+<script src="https://colorlib.com/etc/lf/Login_v1/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v1/vendor/bootstrap/js/popper.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v1/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v1/vendor/select2/select2.min.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v1/vendor/tilt/tilt.jquery.min.js"></script>
+<script>
+$('.js-tilt').tilt({
+	scale: 1.1
+})
+</script>
+
+<script src="https://colorlib.com/etc/lf/Login_v1/js/main.js"></script>
+</body>
+</html>
