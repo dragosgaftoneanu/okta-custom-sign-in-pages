@@ -7,4 +7,4 @@ This repository was created to offer examples on how you can customize the log i
 
 | Screenshot | Name | License | Download |
 |------------|------|---------|----------|
-| <img src="https://github.com/dragosgaftoneanu-okta/custom-sign-in-pages/blob/master/colorlib-login-form/screenshot.png?raw=true" width="500" /> | [Login Form v1 by Colorlib](https://colorlib.com/wp/template/login-form-v1/) | CC BY 3.0 | **[Download](https://github.com/dragosgaftoneanu-okta/custom-sign-in-pages/tree/master/colorlib-login-form)**
+| <img src="https://github.com/dragosgaftoneanu-okta/custom-sign-in-pages/blob/master/colorlib-login-form/screenshot.png?raw=true" width="450" /> | [Login Form v1 by Colorlib](https://colorlib.com/wp/template/login-form-v1/) | CC BY 3.0 | **[Download](https://github.com/dragosgaftoneanu-okta/custom-sign-in-pages/tree/master/colorlib-login-form)**
