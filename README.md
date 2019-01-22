@@ -1,5 +1,5 @@
 # Custom Sign-In Pages
-Okta offers the possibility to customize the log in page when using [Custom URL Domain](https://help.okta.com/en/prod/Content/Topics/Settings/custom-url-domain.htm?cshid=ext_custom_url_domain) and [Custom Okta-Hosted Sign-In](https://help.okta.com/en/prod/Content/Topics/Settings/custom-okta-hosted-sign-in-page.htm) features.
+Okta offers the possibility to customize the log in page when using [Custom URL Domain](https://help.okta.com/en/prod/Content/Topics/Settings/custom-url-domain.htm?cshid=ext_custom_url_domain) (`CUSTOM_URL_DOMAIN`) and [Custom Okta-Hosted Sign-In](https://help.okta.com/en/prod/Content/Topics/Settings/custom-okta-hosted-sign-in-page.htm) (`CUSTOMIZABLE_SIGN_IN_PAGE`) features.
 
 This repository was created to offer examples on how you can customize the log in page, based on existing login page examples found on the web.
 
