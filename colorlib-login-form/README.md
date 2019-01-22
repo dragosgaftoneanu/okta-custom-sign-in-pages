@@ -6,3 +6,4 @@
 ## Notes
 * If you do not see Custom Sign In tab, you will need [Custom URL Domain](https://help.okta.com/en/prod/Content/Topics/Settings/custom-url-domain.htm?cshid=ext_custom_url_domain) (`CUSTOM_URL_DOMAIN`) and [Custom Okta-Hosted Sign-In](https://help.okta.com/en/prod/Content/Topics/Settings/custom-okta-hosted-sign-in-page.htm) (`CUSTOMIZABLE_SIGN_IN_PAGE`) features enabled on your Okta org.
 * The custom sign in page will appear only on the custom URL. Due to security issues, the HTML changes will not be displayed on the normal Okta login page.
+* The resources are loaded from the developer's website. If you would like retrieve the resources from your website, please check the html/ folder.
