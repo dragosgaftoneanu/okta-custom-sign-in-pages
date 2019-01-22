@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>{{pageTitle}}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="https://colorlib.com/etc/lf/Login_v4/images/icons/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v4/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v4/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v4/fonts/iconic/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v4/vendor/animate/animate.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v4/vendor/css-hamburgers/hamburgers.min.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v4/vendor/animsition/css/animsition.min.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v4/vendor/select2/select2.min.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v4/vendor/daterangepicker/daterangepicker.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v4/css/util.css">
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/lf/Login_v4/css/main.css">
+{{{SignInWidgetResources}}}
+
+<style type="text/css">
+#okta-sign-in{width:100%;margin-top:-50px;padding-bottom:70px;border:0px;}
+#okta-sign-in .auth-header{border-bottom:0px;}
+#okta-sign-in .auth-content{padding:0px;}
+#okta-sign-in.auth-container.main-container{box-shadow: 5px 5px white;}
+#okta-sign-in.auth-container.main-container{box-shadow: 5px 5px white;}
+#okta-sign-in .o-form .input-fix input[type=number], #okta-sign-in .o-form .input-fix input[type=password], #okta-sign-in .o-form .input-fix input[type=text], #okta-sign-in .o-form .input-fix input[type=textbox]{font-family: Poppins-Medium;font-size: 15px;line-height: 1.5;color: #666;display: block;width: 100%;background: #f0f0f0;border-radius: 15px;padding: 0 30px 0 68px;outline:none;}
+#okta-sign-in .o-form .input-fix{border:0px;}
+#okta-sign-in .o-form-head{font-family: Poppins-Bold;}
+#okta-sign-in.auth-container .button-primary{font-weight:bold;font-family: Poppins-Medium;font-size: 15px;line-height: 1.5;color: #fff;text-transform: uppercase;width: 100%;height: 50px;border-radius: 15px;display: -webkit-box;display: -webkit-flex;display: -moz-box;display: -ms-flexbox;display: flex;justify-content: center;align-items: center;padding: 0 15px;-webkit-transition: all .4s;-o-transition: all .4s;-moz-transition: all .4s;transition: all .4s;border-width:0px;}
+
+</style>
+</head>
+<body>
+<div class="limiter">
+<div class="container-login100" style="background-image: url('https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg');">
+<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-20">
+<div id="okta-login-container" style="margin-bottom:-50px;"></div>
+{{{OktaUtil}}}
+
+<script type="text/javascript">
+	var config = OktaUtil.getSignInWidgetConfig();
+	config["features"]["securityImage"] = false;
+
+	var oktaSignIn = new OktaSignIn(config);
+	oktaSignIn.renderEl({
+			el: '#okta-login-container'
+		},
+		OktaUtil.completeLogin,
+		function(error) 
+		{
+			console.log(error.message, error);
+		}
+	);
+</script>
+<div class="txt1 text-center p-t-54 p-b-20">
+<span>
+Or With Social Login
+</span>
+</div>
+<div class="flex-c-m">
+<a href="#" class="login100-social-item bg1">
+<i class="fa fa-facebook"></i>
+</a>
+<a href="#" class="login100-social-item bg3">
+<i class="fa fa-google"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="dropDownSelect1"></div>
+
+<script src="https://colorlib.com/etc/lf/Login_v4/vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v4/vendor/animsition/js/animsition.min.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v4/vendor/bootstrap/js/popper.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v4/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v4/vendor/select2/select2.min.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v4/vendor/daterangepicker/moment.min.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v4/vendor/daterangepicker/daterangepicker.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v4/vendor/countdowntime/countdowntime.js"></script>
+<script src="https://colorlib.com/etc/lf/Login_v4/js/main.js"></script>
+</body>
+</html>

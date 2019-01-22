@@ -5,6 +5,7 @@ This repository was created to offer examples on how you can customize the log i
 
 :information_source: **Disclaimer:** The information found in this repository is provided AS IS without warranty of any kind. Okta disclaims all implied warranties including, without limitation, any implied warranties of fitness for a particular purpose. We highly recommend testing scripts in a preview environment if possible.
 
-| Screenshot | Name | License | Download |
-|------------|------|---------|----------|
-| <img src="https://github.com/dragosgaftoneanu-okta/custom-sign-in-pages/blob/master/colorlib-login-form/screenshot.png?raw=true" width="450" /> | [Login Form v1 by Colorlib](https://colorlib.com/wp/template/login-form-v1/) | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) | **[Download](https://github.com/dragosgaftoneanu-okta/custom-sign-in-pages/tree/master/colorlib-login-form)**
+| Screenshot | Download | License | Source |
+|------------|----------|---------|--------|
+| <img src="https://github.com/dragosgaftoneanu-okta/custom-sign-in-pages/blob/master/colorlib-login-form/screenshot.png?raw=true" width="450" /> | **[Download](https://github.com/dragosgaftoneanu-okta/custom-sign-in-pages/tree/master/colorlib-login-form)** | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) | [Source](https://colorlib.com/wp/template/login-form-v1/)
+| <img src="https://github.com/dragosgaftoneanu-okta/custom-sign-in-pages/blob/master/colorlib-login-form-2/screenshot.png?raw=true" width="450" /> | **[Download](https://github.com/dragosgaftoneanu-okta/custom-sign-in-pages/tree/master/colorlib-login-form-2)** | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) | [Source](https://colorlib.com/wp/template/login-form-v4/)
