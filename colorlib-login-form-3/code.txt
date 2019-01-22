@@ -18,7 +18,7 @@
 {{{SignInWidgetResources}}}
 
 <style type="text/css">
-#okta-sign-in{width:150%;padding-bottom:70px;border:0px;margin-top:-50px;}
+#okta-sign-in{width:470px;padding-bottom:70px;border:0px;margin-top:-50px;}
 #okta-sign-in .auth-header{border-bottom:0px;}
 #okta-sign-in .auth-content{padding:0px;}
 #okta-sign-in.auth-container.main-container{box-shadow: 5px 5px white;}
@@ -37,11 +37,11 @@
 <span class="login100-form-title p-b-53">
 Sign In With
 </span>
-<a href="#" class="btn-face m-b-20">
+<a href="https://ok6.okta.adminpanel.biz/oauth2/default/v1/authorize?idp=0oa2ieuv78Ke35Phw2p7&client_id=0oa2iemghrfhjXxFN2p7&response_type=id_token&response_mode=fragment&scope=openid&redirect_uri=https://ok6.okta.adminpanel.biz/&state=CSRF&nonce=replay" class="btn-face m-b-20">
 <i class="fa fa-facebook-official"></i>
 Facebook
 </a>
-<a href="#" class="btn-google m-b-20">
+<a href="https://ok6.okta.adminpanel.biz/oauth2/default/v1/authorize?idp=0oa2drcuiv3EP9BmH2p7&client_id=0oa2dr6v7t1L2FtRx2p7&response_type=id_token&response_mode=fragment&scope=openid&redirect_uri=https://ok6.okta.adminpanel.biz&state=WM6D&nonce=YsG76jo" class="btn-google m-b-20">
 <img src="https://colorlib.com/etc/lf/Login_v5/images/icons/icon-google.png" alt="GOOGLE">
 Google
 </a>
